@@ -1,0 +1,24 @@
+general {
+        colors = true
+        interval = 5
+}
+
+order += "tztime date"
+order += "tztime time"
+order += "battery value"
+
+tztime date {
+        format = "%b. %d"
+}
+
+tztime time {
+        format = "%r"
+}
+
+battery value {
+        format = "⚡ %percentage"
+        low_threshold = 20
+        threshold_type = "percentage"
+        last_full_capacity = true
+        integer_battery_capacity = true
+}
