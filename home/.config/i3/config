@@ -150,3 +150,6 @@ bindsym --release XF86AudioRaiseVolume exec pactl set-sink-volume $running_sink 
 
 # desktop background
 exec --no-startup-id xsetroot -solid "#002b36"
+
+# open selection in app mode
+bindsym $mod+t exec chromium-browser --app=`xclip -o`
