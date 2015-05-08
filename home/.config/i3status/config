@@ -6,6 +6,7 @@ general {
 order += "tztime date"
 order += "tztime time"
 order += "battery value"
+order += "run_watch screencast"
 
 tztime date {
     format = "%b. %d"
@@ -21,4 +22,8 @@ battery value {
     threshold_type = "percentage"
     last_full_capacity = true
     integer_battery_capacity = true
+}
+
+run_watch screencast {
+    pidfile = "~/.screencast.pid"
 }

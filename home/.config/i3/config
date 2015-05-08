@@ -153,3 +153,6 @@ exec --no-startup-id xsetroot -solid "#002b36"
 
 # open selection in app mode
 bindsym $mod+t exec chromium-browser --app=`xclip -o`
+
+# start or stop a screenCast
+bindsym $mod+c exec screencast
