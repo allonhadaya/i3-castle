@@ -137,8 +137,6 @@ bar {
 exec --no-startup-id nm-applet
 # pulseaudio
 exec --no-startup-id pasystray
-# tomate
-exec --no-startup-id tomate
 # redshift
 exec --no-startup-id gtk-redshift
 
