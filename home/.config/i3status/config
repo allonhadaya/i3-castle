@@ -6,7 +6,8 @@ general {
 order += "tztime date"
 order += "tztime time"
 order += "battery value"
-order += "run_watch screencast"
+order += "disk /"
+order += "run_watch recording"
 
 tztime date {
     format = "%b. %d"
@@ -24,6 +25,11 @@ battery value {
     integer_battery_capacity = true
 }
 
-run_watch screencast {
+disk "/" {
+    # 𝍖 is the tetragram for fostering.
+    format = "𝍖 %percentage_used"
+}
+
+run_watch recording {
     pidfile = "~/.screencast.pid"
 }
