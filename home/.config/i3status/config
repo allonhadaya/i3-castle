@@ -7,7 +7,6 @@ order += "tztime date"
 order += "tztime time"
 order += "battery value"
 order += "disk /"
-order += "run_watch recording"
 
 tztime date {
     format = "%b. %d"
@@ -30,6 +29,3 @@ disk "/" {
     format = "𝍖 %percentage_used"
 }
 
-run_watch recording {
-    pidfile = "~/.screencast.pid"
-}
