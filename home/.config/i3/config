@@ -157,3 +157,13 @@ bindsym $mod+t exec chromium-browser --app=`xclip -o`
 
 # start or stop a screenCast
 bindsym $mod+c exec screencast
+
+# start the dropbox daemon
+exec --no-startup-id dropbox start
+
+# start the gpg-agent
+exec --no-startup-id $(gpg-agent --daemon --enable-ssh-support)
+
+# run dmenu pass script
+bindsym $mod+p exec passmenu
+
