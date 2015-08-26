@@ -194,7 +194,7 @@ exec --no-startup-id gtk-redshift
 # volume control (Pulse Audio)
 
 # target the first active sink
-set $running_sink $(pactl list short sinks | grep RUNNING - | head -c1)
+set $running_sink $(pactl list short sinks | grep RUNNING - | head -n1 | cut -d "	" -f1)
 # mute
 bindsym --release XF86AudioMute exec pactl set-sink-mute $running_sink toggle
 # down
