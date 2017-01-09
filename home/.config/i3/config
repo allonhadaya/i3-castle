@@ -207,14 +207,26 @@ bindsym --release XF86AudioRaiseVolume exec pactl set-sink-volume $running_sink 
 
 # open selection in app mode
 bindsym $mod+t exec chromium-browser --app=`xclip -o`
-# start or stop a screenCast
-bindsym $mod+c exec screencast
 
+# start or stop a screenCast
+bindsym $mod+Shift+c exec screencast
+
+# take a screenshot
+bindsym $mod+c exec gnome-screenshot
+
+# add bookmark
+bindsym $mod+b exec bukuadd
+
+# open browser
+bindsym $mod+n exec firefox
+
+# open browser private
+bindsym $mod+Shift+n exec firefox -private-window
+
+# open thunderbird
+bindsym $mod+m exec thunderbird
 
 # start some service-like processes
 
-# start the dropbox daemon
-exec --no-startup-id dropbox start
 # start the gpg-agent
 exec --no-startup-id $(gpg-agent --daemon --enable-ssh-support)
-

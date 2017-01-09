@@ -6,6 +6,7 @@ general {
 order += "tztime date"
 order += "tztime time"
 order += "battery value"
+order += "cpu_usage"
 order += "disk /"
 
 tztime date {
@@ -22,6 +23,10 @@ battery value {
     threshold_type = "percentage"
     last_full_capacity = true
     integer_battery_capacity = true
+}
+
+cpu_usage {
+    format = "𝌆 %usage"
 }
 
 disk "/" {
